@@ -33,9 +33,9 @@ And, for the creatives watching, strap in cuz you’re about to learn another am
 
 ## Flow of sections
 
-- Level 1 - Pre-reqs & Make.com
-- Level 2 - JSON
-- Level 3 - JSON2Video Elements
+- Part 1 - Pre-reqs & Make.com
+- Part 2 - JSON
+- Part 3 - JSON2Video Elements
     - movie.json
     - audio
     - video
@@ -46,8 +46,8 @@ And, for the creatives watching, strap in cuz you’re about to learn another am
     - text
     - component
     - audiogram
-- Level 4 - Scenes
-- Level 5 - A.I. Video Automation
+- Part 4 - Scenes
+- Part 5 - A.I. Video Automation
 
 ## Test media assets
 
