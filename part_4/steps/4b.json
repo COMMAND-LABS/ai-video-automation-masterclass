@@ -1,0 +1,41 @@
+{
+  "comment": "Some movie",
+  "resolution": "sd",
+  "quality": "low",
+  "scenes": [
+    {
+      "comment": "Scene 1",
+      "elements": [
+        {
+          "type": "image",
+          "src": "https://www.dropbox.com/scl/fi/pzn80gaag4exvhr4g6apo/George_Washington.jpg?rlkey=px67yv0ltlbzjb6aibp3ji9b1&st=sw918zlt&raw=1",
+          "duration": 2,
+          "position": "center-center"
+        }
+      ]
+    },
+    {
+      "comment": "Scene 2",
+      "elements": [
+        {
+          "type": "image",
+          "src": "https://www.dropbox.com/scl/fi/xmqzh3htq8kn3gdvnchmy/John_Adams.jpg?rlkey=lkk82f5p7b3dbc0wpt3cxopyx&st=xdhoef01&raw=1",
+          "duration": 2,
+          "position": "center-center"
+        }
+      ]
+    },
+    {
+      "comment": "Scene 3",
+      "elements": [
+        {
+          "type": "image",
+          "src": "https://www.dropbox.com/scl/fi/h3apyqmmngvzwuxgjlypp/Thomas_Jefferson.jpg?rlkey=w45g759zdlc3w7c8bp9y2zriu&st=4qqg12xj&raw=1",
+          "duration": 2,
+          "position": "center-center"
+        }
+      ]
+    }
+  ],
+  "elements": []
+}

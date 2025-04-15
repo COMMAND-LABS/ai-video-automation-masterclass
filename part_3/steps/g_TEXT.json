@@ -1,0 +1,18 @@
+{
+  "comment": "Some movie",
+  "resolution": "sd",
+  "quality": "low",
+  "scenes": [
+    {
+      "comment": "Scene 1",
+      "elements": [
+        {
+          "type": "text",
+          "text": "Hello world",
+          "duration": 4
+        }
+      ]
+    }
+  ],
+  "elements": []
+}

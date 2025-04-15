@@ -1,0 +1,19 @@
+{
+  "comment": "Some movie",
+  "resolution": "sd",
+  "quality": "low",
+  "scenes": [
+    {
+      "comment": "Scene 1",
+      "elements": [
+        {
+          "type": "video",
+          "src": "https://www.dropbox.com/scl/fi/58m0b000ihdps55bna5kh/hyperspeed.mov?rlkey=mri88i7ubzq7gtgquowxjgrgu&st=g9o7m5ya&raw=1",
+          "position": "center-center",
+          "duration": 4
+        }
+      ]
+    }
+  ],
+  "elements": []
+}

@@ -1,0 +1,18 @@
+{
+  "comment": "Some movie",
+  "resolution": "sd",
+  "quality": "low",
+  "scenes": [
+      {
+          "comment": "Scene 1",
+          "elements": [
+            {
+              "type": "audio",
+              "src": "https://www.dropbox.com/scl/fi/wpk34jd9uo8n9zlbmhg6a/Hallelujah-Chorus-Sound-Effect.mp3?rlkey=69ix82y9ldtc6cavcoqk59ih8&st=7h38y0bm&raw=1",
+              "duration": 4
+            }
+          ]
+      }
+  ],
+  "elements": []
+}

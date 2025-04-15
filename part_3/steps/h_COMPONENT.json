@@ -1,0 +1,28 @@
+{
+  "resolution": "sd",
+  "quality": "low",
+  "draft": false,
+  "scenes": [
+      {
+          "background-color": "black",
+          "duration": 4,
+          "elements": [
+              {
+                  "type": "component",
+                  "component": "basic/052",
+                  "settings": {
+                      "card": {
+                        "vertical-align": "center"
+                      },
+                      "section": {
+                          "text": "SPACE"
+                      },
+                      "headline": {
+                          "text": "25 photos that could change the way you see our universe"
+                      }
+                  }
+              }
+          ]
+      }
+  ]
+}

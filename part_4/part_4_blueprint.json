@@ -1,0 +1,126 @@
+{
+    "name": "JSON2Video Scenes",
+    "flow": [
+        {
+            "id": 1,
+            "module": "util:SetVariable2",
+            "version": 1,
+            "parameters": {},
+            "mapper": {
+                "name": "movie",
+                "scope": "roundtrip",
+                "value": "{\n  \"comment\": \"Some movie\",\n  \"resolution\": \"sd\",\n  \"quality\": \"low\",\n  \"scenes\": [\n    {\n      \"comment\": \"Scene 1\",\n      \"elements\": [\n        {\n          \"type\": \"image\",\n          \"src\": \"https://www.dropbox.com/scl/fi/pzn80gaag4exvhr4g6apo/George_Washington.jpg?rlkey=px67yv0ltlbzjb6aibp3ji9b1&st=sw918zlt&raw=1\",\n          \"position\": \"center-center\",\n          \"zoom\": 1\n        },\n        {\n          \"type\": \"voice\",\n          \"text\": \"George Washington\",\n          \"voice\": \"en-US-EmmaMultilingualNeural\",\n          \"model\": \"azure\"\n        }\n      ]\n    },\n    {\n      \"comment\": \"Scene 2\",\n      \"elements\": [\n        {\n          \"type\": \"image\",\n          \"src\": \"https://www.dropbox.com/scl/fi/xmqzh3htq8kn3gdvnchmy/John_Adams.jpg?rlkey=lkk82f5p7b3dbc0wpt3cxopyx&st=xdhoef01&raw=1\",\n          \"position\": \"center-center\",\n          \"zoom\": 1\n        },\n        {\n          \"type\": \"voice\",\n          \"text\": \"John Adams\",\n          \"voice\": \"en-US-EmmaMultilingualNeural\",\n          \"model\": \"azure\"\n        }\n      ]\n    }\n  ],\n  \"elements\": [\n    {\n      \"type\": \"subtitles\",\n      \"settings\": {\n        \"font-family\": \"Boldonse-Regular\",\n        \"font-url\": \"https://www.dropbox.com/scl/fi/9x84netesf7acx9d6qml4/Boldonse-Regular.ttf?rlkey=bps6ymww8oe67vcg1f4bl1uqq&st=fp5e1jic&raw=1\",\n        \"box-color\": \"#000000\",\n        \"font-size\": 80,\n        \"word-color\": \"#FFFFFF\",\n        \"position\": \"mid-bottom-center\",\n        \"style\": \"boxed-word\",\n        \"outline-color\": \"#000000\",\n        \"outline-width\": 2,\n        \"shadow-color\": \"#000000\",\n        \"shadow-offset\": 4,\n        \"max-words-per-line\": 4\n      }\n    }\n  ]\n}"
+            },
+            "metadata": {
+                "designer": {
+                    "x": 0,
+                    "y": 0
+                },
+                "restore": {
+                    "expect": {
+                        "scope": {
+                            "label": "One cycle"
+                        }
+                    }
+                },
+                "expect": [
+                    {
+                        "name": "name",
+                        "type": "text",
+                        "label": "Variable name",
+                        "required": true
+                    },
+                    {
+                        "name": "scope",
+                        "type": "select",
+                        "label": "Variable lifetime",
+                        "required": true,
+                        "validate": {
+                            "enum": [
+                                "roundtrip",
+                                "execution"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "value",
+                        "type": "any",
+                        "label": "Variable value"
+                    }
+                ],
+                "interface": [
+                    {
+                        "name": "movie",
+                        "type": "any",
+                        "label": "movie"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 2,
+            "module": "json2video:createmovie",
+            "version": 1,
+            "parameters": {
+                "__IMTCONN__": 2660185
+            },
+            "mapper": {
+                "movie_json": "{{1.movie}}"
+            },
+            "metadata": {
+                "designer": {
+                    "x": 300,
+                    "y": 0
+                },
+                "restore": {
+                    "parameters": {
+                        "__IMTCONN__": {
+                            "data": {
+                                "scoped": "true",
+                                "connection": "json2video"
+                            },
+                            "label": "My JSON2Video connection (tad@cmdlabs.io - admin)"
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "__IMTCONN__",
+                        "type": "account:json2video",
+                        "label": "Connection",
+                        "required": true
+                    }
+                ],
+                "expect": [
+                    {
+                        "name": "movie_json",
+                        "type": "text",
+                        "label": "Movie JSON",
+                        "required": true
+                    }
+                ]
+            }
+        }
+    ],
+    "metadata": {
+        "instant": false,
+        "version": 1,
+        "scenario": {
+            "roundtrips": 1,
+            "maxErrors": 3,
+            "autoCommit": true,
+            "autoCommitTriggerLast": true,
+            "sequential": false,
+            "slots": null,
+            "confidential": false,
+            "dataloss": false,
+            "dlq": false,
+            "freshVariables": false
+        },
+        "designer": {
+            "orphans": []
+        },
+        "zone": "us2.make.com",
+        "notes": []
+    }
+}

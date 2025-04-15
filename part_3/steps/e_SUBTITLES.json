@@ -1,0 +1,36 @@
+{
+  "comment": "Some movie",
+  "resolution": "sd",
+  "quality": "low",
+  "scenes": [
+    {
+      "comment": "Scene 1",
+      "elements": [
+        {
+          "type": "voice",
+          "text": "Hello, world!",
+          "voice": "en-US-EmmaMultilingualNeural",
+          "model": "azure"
+        },
+        {
+          "type": "subtitles",
+          "settings": {
+            "font-family": "Boldonse-Regular",
+            "font-url": "https://www.dropbox.com/scl/fi/9x84netesf7acx9d6qml4/Boldonse-Regular.ttf?rlkey=bps6ymww8oe67vcg1f4bl1uqq&st=fp5e1jic&raw=1",
+            "box-color": "#000000",
+            "font-size": 160,
+            "word-color": "#FFFFFF",
+            "position": "center-center",
+            "style": "boxed-word",
+            "outline-color": "#000000",
+            "outline-width": 2,
+            "shadow-color": "#000000",
+            "shadow-offset": 4,
+            "max-words-per-line": 4
+          }
+        }
+      ]
+    }
+  ],
+  "elements": []
+}

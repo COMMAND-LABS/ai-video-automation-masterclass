@@ -1,0 +1,19 @@
+{
+  "comment": "Some movie",
+  "resolution": "sd",
+  "quality": "low",
+  "scenes": [
+    {
+      "comment": "Scene 1",
+      "elements": [
+        {
+          "type": "image",
+          "src": "",
+          "duration": 1,
+          "position": "center"
+        }
+      ]
+    }
+  ],
+  "elements": []
+}

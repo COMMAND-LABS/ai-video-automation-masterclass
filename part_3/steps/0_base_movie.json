@@ -1,0 +1,12 @@
+{
+  "comment": "Some movie",
+  "resolution": "full-hd",
+  "quality": "high",
+  "scenes": [
+      {
+          "comment": "Scene 1",
+          "elements": []
+      }
+  ],
+  "elements": []
+}
